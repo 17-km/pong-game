@@ -15,21 +15,27 @@ class TForm1 : public TForm
 __published:	// IDE-managed Components
         TImage *backgroundForMatch;
         TShape *rightPaddle;
-        TTimer *rightPaddleTop;
+        TTimer *rightPaddleUp;
         TTimer *rightPaddleDown;
         TShape *leftPaddle;
         TTimer *leftPaddleDown;
-        TTimer *leftPaddleTop;
+        TTimer *leftPaddleUp;
         TShape *ball;
         TTimer *ballTimer;
+        TLabel *difficultyLevelButton;
+        TLabel *playersModeButton;
+        TLabel *startButton;
+        TLabel *helpButton;
+        TLabel *exitButton;
+        TShape *backgroundForMenu;
         void __fastcall rightPaddleDownTimer(TObject *Sender);
-        void __fastcall rightPaddleTopTimer(TObject *Sender);
+        void __fastcall rightPaddleUpTimer(TObject *Sender);
         void __fastcall FormKeyDown(TObject *Sender, WORD &Key,
           TShiftState Shift);
         void __fastcall FormKeyUp(TObject *Sender, WORD &Key,
           TShiftState Shift);
         void __fastcall leftPaddleDownTimer(TObject *Sender);
-        void __fastcall leftPaddleTopTimer(TObject *Sender);
+        void __fastcall leftPaddleUpTimer(TObject *Sender);
         void __fastcall ballTimerTimer(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
